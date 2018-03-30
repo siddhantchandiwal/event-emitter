@@ -15,7 +15,13 @@ export class SecondChildComponentComponent implements OnInit {
 
   renderName() {
     this.outputValue = this.value;
-    alert("Value passed is - " + this.outputValue);
+    console.log("Passed value is "+this.outputValue);
+
+    if(this.outputValue==undefined){
+      alert("Please pass some input value");
+    }else{
+      alert("Value passed is - " + this.outputValue);
+    }
   }
 
 }
