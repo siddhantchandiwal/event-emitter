@@ -1,0 +1,8 @@
+<app-child-component (valueChange)="displayCounter($event)"></app-child-component>
+
+The output is: {{output}}
+
+<hr>
+
+<input type="text" [(ngModel)]="name" name="name" />
+<app-second-child-component [value]="name"></app-second-child-component>
