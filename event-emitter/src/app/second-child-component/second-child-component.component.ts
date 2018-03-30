@@ -20,7 +20,7 @@ export class SecondChildComponentComponent implements OnInit {
     if(this.outputValue==undefined){
       alert("Please pass some input value");
     }else{
-      alert("Value passed is - " + this.outputValue);
+      alert("Value passed is:  " + this.outputValue);
     }
   }
 

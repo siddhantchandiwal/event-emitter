@@ -1,8 +1,10 @@
 <app-child-component (valueChange)="displayCounter($event)"></app-child-component>
-
-Current Count is: {{output}}
+<br>
+<br>
+Number of clicks: {{output}}
 
 <hr>
-
+<br>
+<br>
 <input type="text" [(ngModel)]="name" name="name" />
 <app-second-child-component [value]="name"></app-second-child-component>
